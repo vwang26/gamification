@@ -8,6 +8,9 @@ import cal from '.././img/calculator-website.svg';
 const Main = () => {
   const [show, setShow] = useState(false)
   return (
+        <a href="calculator">
+          Debug link to calculator
+        </a>
     <section className="container">
         <a href="calculator">
           Debug link to calculator
