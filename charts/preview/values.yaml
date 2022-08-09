@@ -1,0 +1,17 @@
+global:
+  domain: dx.cxawsnprd.massmutual.com
+preview:
+  resources:
+    limits:
+      cpu: 100m
+      memory: 100Mi
+    requests:
+      cpu: 100m
+      memory: 100Mi
+  ingress:
+    subdomains:
+      - BRANCH_NAME
+  image:
+    repository: test
+    tag: test
+    pullPolicy: IfNotPresent

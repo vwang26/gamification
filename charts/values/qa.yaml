@@ -1,0 +1,5 @@
+global:
+    domain: dx.cxawsnprd.massmutual.com
+ngress:
+  subdomains:
+    - hello-blueprint-qa

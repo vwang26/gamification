@@ -1,0 +1,5 @@
+
+dependencies:
+- alias: preview
+  name: hello-blueprint
+  repository: file://../hello-blueprint

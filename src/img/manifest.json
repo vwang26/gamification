@@ -1,0 +1,20 @@
+{
+  "short_name": "Hello Blueprint",
+  "name": "Basic example app using the Blueprint Design System",
+  "icons": [
+    {
+      "src": "192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#002f6c",
+  "background_color": "#ffffff"
+}

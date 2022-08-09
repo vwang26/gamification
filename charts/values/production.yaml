@@ -1,0 +1,5 @@
+global:
+    domain: dx-prod.cxawsprd.massmutual.com
+ingress:
+  subdomains:
+    - hello-blueprint

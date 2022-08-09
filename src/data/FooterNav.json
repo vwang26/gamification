@@ -1,0 +1,101 @@
+{
+  "hasFooterNews": true,
+  "footerNews": {
+    "id": "4f3eb20f5802160a3249",
+    "title": "News Footer, Default",
+    "qname": "o:4f3eb20f5802160a3249",
+    "typeQName": "mmcx:footernews",
+    "heading": "Get the latest insurance, retirement, and financial planning news.",
+    "copytext": "Our newsletter provides insights into current events, financial tactics and ways to save.",
+    "url": {
+      "dev": "https://cloud.mm.massmutual.com/newsletter-subscription-form",
+      "qa": "https://cloud.mm.massmutual.com/newsletter-subscription-form",
+      "prod": "https://cloud.mm.massmutual.com/newsletter-subscription-form"
+    }
+  },
+  "footerNav": {
+    "nav_header": [
+      {
+        "hideLoggedIn": false,
+        "nav_header_title": "Accounts",
+        "bkg_standout": false
+      },
+      {
+        "hideLoggedIn": false,
+        "nav_header_title": "Company",
+        "bkg_standout": false
+      },
+      {
+        "hideLoggedIn": false,
+        "nav_header_title": "Solutions",
+        "bkg_standout": false
+      },
+      {
+        "hideLoggedIn": false,
+        "nav_header_title": "Security",
+        "bkg_standout": false
+      },
+      {
+        "hideLoggedIn": false,
+        "nav_header_title": "Information for Policy Holders",
+        "bkg_standout": false
+      },
+      {
+        "hideLoggedIn": false,
+        "nav_header_title": "For Financial Professionals",
+        "bkg_standout": true
+      }
+    ],
+    "id": "8380d7dfb8db19c9aa70",
+    "title": "Default Navigation Footer",
+    "qname": "o:08715227c7469729814f",
+    "typeQName": "mmcx:globalfooternavigation"
+  },
+  "footerCopyright": {
+    "links": [
+      {
+        "id": "ed449b98d2aa9b566526",
+        "title": "Terms of Use Link",
+        "qname": "o:ed449b98d2aa9b566526",
+        "typeQName": "mmcx:link",
+        "defaultTitle": "Terms of Use",
+        "url": "/legal/terms-of-use",
+        "target": "_self",
+        "domain": {
+          "id": "404e31228e54dc5ea760",
+          "title": "www.massmutual.com",
+          "qname": "o:50534f6441d0be3400a3",
+          "typeQName": "mmcx:domain",
+          "domainReference": "homepage"
+        }
+      },
+      {
+        "id": "559678bc1d40843e2700",
+        "title": "Privacy Policy Link",
+        "qname": "o:559678bc1d40843e2700",
+        "typeQName": "mmcx:link",
+        "defaultTitle": "Privacy",
+        "url": "/legal/privacy",
+        "target": "_self",
+        "domain": {
+          "id": "404e31228e54dc5ea760",
+          "title": "www.massmutual.com",
+          "qname": "o:50534f6441d0be3400a3",
+          "typeQName": "mmcx:domain",
+          "domainReference": "homepage"
+        }
+      }
+    ],
+    "id": "fdda68859035b93026c9",
+    "title": "Default Copyright Footer",
+    "qname": "o:fdda68859035b93026c9",
+    "typeQName": "mmcx:footer-copyright",
+    "copyright": "©2020 Massachusetts Mutual Life Insurance Company (MassMutual®), Springfield, MA 01111-0001. All rights reserved."
+  },
+  "description": "Default footer with News, Homepage Navigation, and Default Copyright footer",
+  "title": "Default Footer",
+  "titleSlug": "mmcom-footer",
+  "socialSharing": false,
+  "showPopularArticles": false,
+  "viewAllLink": false
+}

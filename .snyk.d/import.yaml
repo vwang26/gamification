@@ -1,0 +1,11 @@
+schema: 1
+orgName: blueprint
+integrationName: github-enterprise
+tags:
+  application: hello_blueprint
+  team: blueprint
+  deployed: false
+  url: https://hello-blueprint-dev.dx.cxawsnprd.massmutual.com
+exclusionGlobs: "fixtures, tests, __tests__, node_modules"
+branches: 
+  - develop

@@ -1,0 +1,65 @@
+{
+  "state": "live",
+  "workflowUnpublish": false,
+  "_source_doc": "3590f075561c5eea7a4c",
+  "logoUrl": "https://www.massmutual.com",
+  "logoText": "MassMutual Logo",
+  "notificationMenu": {
+      "ref": "node://fd21421d4c0a21aa2036/de685576d8047147eadf/3cdbd8f4de68b40b2ff3/fb50dc8357064a774087",
+      "notificationItems": [
+          {
+              "ref": "node://fd21421d4c0a21aa2036/de685576d8047147eadf/3cdbd8f4de68b40b2ff3/8b68898191571f51800f",
+              "id": "8b68898191571f51800f",
+              "title": "Corona Notification",
+              "qname": "o:8b68898191571f51800f",
+              "typeQName": "mmcx:notification",
+              "label": " ",
+              "shortDescription": "<div class=\"WordSection1\">\n<p><strong>MassMutual is here for our customers during the COVID-19 pandemic.</strong></p>\n\n<p>Here is&nbsp;a message from our CEO on the strength and stability you can expect from MassMutual during these unprecedented times. <a data-link-id=\"516ea7a2-ec4d-4714-85ac-8df507d9ad97\" href=\"https://www.massmutual.com/lp/ceo-message\">Read More</a></p>\n\n<p>We've also collected useful resources to help you navigate the uncertainty. <a data-link-id=\"3a438891-1990-429f-bdfd-0a74f31e6e35\" href=\"https://www.massmutual.com/lp/navigating-uncertainty\">Learn More</a>&nbsp;</p>\n</div>\n",
+              "category": "warning",
+              "recurrence": "1",
+              "startDate": "03/18/2020 10:58:07",
+              "endDate": "05/31/2020 23:59:59"
+          }
+      ],
+      "id": "fb50dc8357064a774087",
+      "title": "Homepage Notification Bar",
+      "qname": "o:fb50dc8357064a774087",
+      "typeQName": "mmcx:notification-bar"
+  },
+  "mainNav": {
+      "ref": "node://fd21421d4c0a21aa2036/de685576d8047147eadf/3cdbd8f4de68b40b2ff3/71c1740d5cce1c236345",
+      "navItems": [
+          {
+              "navItemType": "link",
+              "link": {
+                  "linkContent": {
+                      "ref": "node://fd21421d4c0a21aa2036/de685576d8047147eadf/3cdbd8f4de68b40b2ff3/b3db8007054eb20b6a4e",
+                      "id": "b3db8007054eb20b6a4e",
+                      "title": "Business Link",
+                      "qname": "o:0fb0b93aa9884a6a3ac3",
+                      "typeQName": "mmcx:link",
+                      "defaultTitle": "Business",
+                      "url": "/business",
+                      "target": "_self"
+                  },
+                  "overrideTitle": "For Business",
+                  "displayOptions": [
+                      "unauthenticated",
+                      "lite",
+                      "heavy"
+                  ]
+              }
+          }
+      ],
+      "id": "71c1740d5cce1c236345",
+      "title": "Hello Blueprint Main Nav",
+      "qname": "o:9ee77b18846e4888e601",
+      "typeQName": "mmcx:header-main-nav",
+      "branding": {
+          "brandingOption": "MassMutual"
+      }
+  },
+  "description": "Hello Blueprint Header",
+  "title": "Blueprint Design System Navigation",
+  "titleSlug": "blueprint-header"
+}

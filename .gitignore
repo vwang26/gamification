@@ -1,0 +1,52 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+.idea/
+.code-workspace
+.vscode
+.tmp
+.sass-cache
+.ticket
+.dccache
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+*.log
+*.zip
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+test/docker-compose.yml
+test/capture/*png
+test/tests/__pycache__
+test/.docker-images-*
+test/.pytest_cache
+
+a11y/results/*html
+a11y/a11y-sources.js
+
+commit.diff
+package.diff
+versions
+package.json.bak
