@@ -10,7 +10,6 @@ const Calculator = () => {
   return (
     <section className="container">
       <div>
-          Placeholder for Calculator
       </div>
     </section>
   );

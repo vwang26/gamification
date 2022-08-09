@@ -1,91 +1,38 @@
-import React from 'react';
-
-import { Card } from 'react-blueprint-library';
+import React, { useState } from 'react';
+import {Button, Modal } from 'react-blueprint-library';
 import blueprintLogo from '.././img/blueprint-icon.svg';
 import reactBlueprintLogo from '.././img/react-blueprint-icon.svg';
 import githubLogo from '.././img/github.svg';
-
+import cal from '.././img/calculator-website.svg'; 
 
 const Main = () => {
+  const [show, setShow] = useState(false)
   return (
     <section className="container">
-      <div className="row">
-        <div className="col-12">
-          <h2 className="mm-text-center">The purpose of this site is to see the Blueprint Design System in action.</h2> 
-          <p className="mm-text-center">It's an example of a simple React application using CSS-Blueprint for visual styling and components from the React-Blueprint library for dynamic interaction.</p>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-sm-6 col-md-3 align-self-stretch">
-          <Card>
-            <Card.Body>
-              <a
-                className="btn btn-link"
-                href="https://blueprint-css.dx-prod.cxawsprd.massmutual.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-              <Card.Title>CSS-Blueprint Styleguide</Card.Title> 
-              </a>
-              <img src={blueprintLogo} className="blueprint-logo" alt="Blueprint logo" />
-            </Card.Body>
-          </Card>
-        </div>
-        
-        <div className="col-sm-6 col-md-3 align-self-stretch">
-          <Card>
-            <Card.Body>
-              <a
-                className="btn btn-link"
-                href="https://react-blueprint-qa.dx.cxawsnprd.massmutual.com/?path=/story/introduction--page"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-              <Card.Title>React-Blueprint Styleguide</Card.Title>
-              </a>
-              <img src={reactBlueprintLogo} className="blueprint-logo" alt="React Blueprint logo" />
-            </Card.Body>
-          </Card>
-        </div>
-        
-        <div className="col-sm-6 col-md-3 align-self-stretch">
-          <Card>
-            <Card.Body>
-              <a
-                className="btn btn-link"
-                href="https://massmutual.atlassian.net/wiki/spaces/SG/overview"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-              <Card.Title>About the Blueprint Squad</Card.Title>
-              </a>
-              <span className="icon-people-group icon-xl align-self-center" alt="People Group Icon"></span>
-            </Card.Body>
-          </Card>
-        </div>
-
-        
-        <div className="col-sm-6 col-md-3 align-self-stretch">
-          <Card>
-            <Card.Body>
-              <a
-                className="btn btn-link"
-                href="https://github.com/massmutual/hello_blueprint"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-              <Card.Title>hello_blueprint Github Repo</Card.Title>
-              </a>
-              <img src={githubLogo} className="blueprint-logo" alt="Github logo" />
-            </Card.Body>
-          </Card>
-        </div>
         <a href="calculator">
           Debug link to calculator
         </a>
 
+        <Button role='button' onClick={()=>{setShow(!show);}}>
+        <img src={cal} alt=""/>
+      </Button>
+      <Modal show={show}>
+        <Modal.Header onClose={()=>{setShow(false)}} title="Insurance">Insurance</Modal.Header>
+        <Modal.Body>
+          <div><a href='https://www.figma.com/exit?url=https%3A%2F%2Fwww.massmutual.com%2Ffinancial-wellness%2Fcalculators%2Flife-insurance-calculator'>Life Insurance Calculator</a></div>
+          <p>If you’re wondering, “How much life insurance do I need?” then our life insurance calculator can provide you with some quick answers. After you calculate your life insurance estimate, consider contacting a financial professional to discuss your individual situation.</p>
+
+          <div><a href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.massmutual.com%2Ffinancial-wellness%2Fcalculators%2Fdisability-income-calculator">Disability Insurance Calculator</a></div>
+          <p>If you were too sick or injured to work, do you have enough income to cover your living expenses? Use the disability insurance calculator to find out.</p>
         
-      </div>
+          <div><a href='https://www.figma.com/exit?url=https%3A%2F%2Fwww.massmutual.com%2Ffinancial-wellness%2Fcalculators%2Fincome-protection-quiz'>Income Protection Quiz</a></div>
+          <p>Test your knowledge of a disability’s effect on finances.</p>
+        
+          <div><a href="https://www.massmutual.com/financial-wellness/calculators/modal-apr-calculator">Modal Charge Disclosure and APR Calculator</a></div>
+          <p>Use this calculator to determine the total dollar amount and the annual percentage rate (APR) for any additional charge you may incur if you pay your annual premium in installments.</p>
+        </Modal.Body>
+      </Modal>
+
     </section>
   );
 };
