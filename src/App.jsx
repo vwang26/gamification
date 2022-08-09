@@ -1,27 +1,23 @@
 import { NavbarSimple, FooterLegal, FooterNavigation } from 'react-blueprint-library';
-import Jumbotron from './Components/Jumbotron';
-import HomepageFeatures from './Components/HomepageFeatures';
+import Main from './pages/main';
+import Calculator from './pages/calculator';
 import './App.scss';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
-
-
-
-function App(props) {
+export default function App() {
   return (
-    <article>
-      <header>
-        <NavbarSimple {...props} authHref="#" />
-      </header>
-
-      <main>
-        <Jumbotron />
-        <HomepageFeatures />
-      </main>
-      <footer>
-        <FooterLegal />
-      </footer>
-    </article>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/calculator" element={<Calculator />}/>
+          <Route path="/" element={<Main />}/>
+        </Routes>
+      </div>
+    </Router>
   );
 }
-
-export default App;

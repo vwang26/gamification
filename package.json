@@ -9,10 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "blueprint-css":"https://artifactory.awsmgmt.massmutual.com/artifactory/etx-generic-local/blueprint/styleguide-3.6.45.tar.gz",
+    "blueprint-css": "https://artifactory.awsmgmt.massmutual.com/artifactory/etx-generic-local/blueprint/styleguide-3.6.45.tar.gz",
     "react": "^18.1.0",
     "react-blueprint-library": "^3.1.103",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
