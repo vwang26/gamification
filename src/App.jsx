@@ -1,4 +1,3 @@
-import { NavbarSimple, FooterLegal, FooterNavigation } from 'react-blueprint-library';
 import Main from './pages/main';
 import Calculator from './pages/calculator';
 import './App.scss';
