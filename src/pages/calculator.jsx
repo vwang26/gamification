@@ -12,6 +12,7 @@ const formInput = (stage,dropdownLabel, setDropdownLabel) => {
   if (stage === 2){
     return (
       <div>
+        <div id="form-input-text"></div>
         <Dropdown className="dropdown">
         <Dropdown.Toggle className="btn btn-secondary dropdown-toggle" variant="success" id="dropdown-basic">
           {dropdownLabel}
@@ -31,7 +32,7 @@ const formInput = (stage,dropdownLabel, setDropdownLabel) => {
   else{
     return (
       <div>
-        <input type="text" className="form-control" id="form1" placeholder={placeHolders[stage]}/>
+        <input id="form-input-text" type="text" className="form-control" onBlur={()=>{this.value=''}} placeholder={placeHolders[stage]}/>
       </div>
     )
   }
@@ -40,15 +41,12 @@ const formInput = (stage,dropdownLabel, setDropdownLabel) => {
 const Calculator = () => {
   const [stage, setStage] = useState(0)
   const [icon, setIcon] = useState(icon1)
-  const [dropdownLabel, setDropdownLabel] = useState();
+  const [dropdownLabel, setDropdownLabel] = useState('Select an option');
 
   const prompts = ['Date of Birth', 'Zipcode', 'Who do you need life insurance to protect?','What is the estimated value of your debt?']
   const icons = [icon1, icon2, icon3, icon4]
   const progressWidth = [100,200,300,1026]
-  const [buttons, setButtons] = useState(
-    <div style={{position: 'absolute', left: '50%', top: '70%', transform: 'translate(-50%,-50%'}}>
-      <button onClick={()=>{setStage(stage+1)}} type="button" className="btn btn-link"><span style={{fontSize: 18}}>Next</span><span className="icon-arrow"></span></button>
-    </div>)
+  const [buttons, setButtons] = useState()
 
   useEffect(()=>{
     console.log('stage:',stage)
@@ -56,10 +54,10 @@ const Calculator = () => {
       setButtons(
         <div style={{display: 'flex', position: 'absolute', left: '50%', top: '70%', transform: 'translate(-50%,-50%'}}>
           <div  style={{paddingLeft: '1vw'}}>
-            <button onClick={()=>{setStage(stage-1)}} type="button" className="btn btn-link"><span className="icon-arrow-spin-left"></span><span style={{fontSize: 18}}>Previous</span></button>
+            <button onClick={()=>{ document.getElementById('form-input-text').value=''; setStage(stage-1)}} type="button" className="btn btn-link"><span className="icon-arrow-spin-left"></span><span style={{fontSize: 18}}>Previous</span></button>
           </div>
           <div style={{paddingLeft: '1vw'}}>
-            <button onClick={()=>{setStage(stage+1)}} type="button" className="btn btn-primary"><span style={{fontSize: 18}}>Calculate</span></button>
+            <button type="button" className="btn btn-primary"><span style={{fontSize: 18}}>Calculate</span></button>
           </div>
         </div>
       )
@@ -68,10 +66,10 @@ const Calculator = () => {
       setButtons(
         <div style={{display: 'flex', position: 'absolute', left: '50%', top: '70%', transform: 'translate(-50%,-50%'}}>
           <div  style={{paddingLeft: '1vw'}}>
-            <button onClick={()=>{setStage(stage-1)}} type="button" className="btn btn-link"><span className="icon-arrow-spin-left"></span><span style={{fontSize: 18}}>Previous</span></button>
+            <button onClick={()=>{document.getElementById('form-input-text').value=''; setStage(stage-1)}} type="button" className="btn btn-link"><span className="icon-arrow-spin-left"></span><span style={{fontSize: 18}}>Previous</span></button>
           </div>
           <div style={{paddingLeft: '1vw'}}>
-            <button onClick={()=>{setStage(stage+1)}} type="button" className="btn btn-link"><span style={{fontSize: 18}}>Next</span><span className="icon-arrow"></span></button>
+            <button onClick={()=>{document.getElementById('form-input-text').value=''; setStage(stage+1)}} type="button" className="btn btn-link"><span style={{fontSize: 18}}>Next</span><span className="icon-arrow"></span></button>
           </div>
         </div>
       )
@@ -79,7 +77,7 @@ const Calculator = () => {
     else{
       setButtons(
         <div style={{position: 'absolute', left: '50%', top: '70%', transform: 'translate(-50%,-50%'}}>
-          <button onClick={()=>{setStage(stage+1)}} type="button" className="btn btn-link"><span style={{fontSize: 18}}>Next</span><span className="icon-arrow"></span></button>
+          <button onClick={()=>{document.getElementById('form-input-text').value=''; setStage(stage+1)}} type="button" className="btn btn-link"><span style={{fontSize: 18}}>Next</span><span className="icon-arrow"></span></button>
         </div>
       )
     }
