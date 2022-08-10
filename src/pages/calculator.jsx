@@ -45,7 +45,7 @@ const Calculator = () => {
 
   const prompts = ['Date of Birth', 'Zipcode', 'Who do you need life insurance to protect?','What is the estimated value of your debt?']
   const icons = [icon1, icon2, icon3, icon4]
-  const progressWidth = [100,200,300,1026]
+  const progressWidth = [100,200,300,920]
   const [buttons, setButtons] = useState()
 
   useEffect(()=>{
@@ -93,7 +93,7 @@ const Calculator = () => {
         <label style={{fontSize: 18}} htmlFor="form1">{prompts[stage]}</label>
         {formInput(stage,dropdownLabel,setDropdownLabel)}
       </div>
-      <div style={{position: 'absolute', top:765, left: 383, width: progressWidth[stage], height: 5, backgroundColor: '#009CDE'}} />
+      <div style={{position: 'absolute', top:685, left: 260, width: progressWidth[stage], height: 5, backgroundColor: '#009CDE'}} />
       {buttons}
     </>
   );
