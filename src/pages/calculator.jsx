@@ -57,7 +57,7 @@ const Calculator = () => {
             <button onClick={()=>{ document.getElementById('form-input-text').value=''; setStage(stage-1)}} type="button" className="btn btn-link"><span className="icon-arrow-spin-left"></span><span style={{fontSize: 18}}>Previous</span></button>
           </div>
           <div style={{paddingLeft: '1vw'}}>
-            <button type="button" className="btn btn-primary"><span style={{fontSize: 18}}>Calculate</span></button>
+            <button type="button" className="btn btn-primary"><a href='/result' style={{fontSize: 18}}>Calculate</a></button>
           </div>
         </div>
       )
